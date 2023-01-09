@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  
+  html {
+    /* color-scheme: dark light; */
+    font-size: 62.5%; /*1rem=10px */
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+    scroll-behavior: smooth;
+  }
+  
+  img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+  }
+  
+  menu:not(article menu),
+  ol:not(article ol),
+  ul:not(article ul) {
+      list-style: none;
+  }
+  
+  menu,
+  ol,
+  ul {
+      padding-left: 0;
+  }
+  
+  label,
+  button,
+  select,
+  summary,
+  [type=radio],
+  [type=submit],
+  [type=checkbox] {
+      cursor: pointer;
+  }
+
+  :root{
+    --black: #131417;
+  }
+
+
+/*550PX MOBILE, 800PX TABLET, 800+DESKTOP*/
