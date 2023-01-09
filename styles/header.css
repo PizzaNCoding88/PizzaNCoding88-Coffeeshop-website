@@ -32,16 +32,27 @@
 }
 
 .navigation__menu-toggle span{
+    position: absolute;
+
     height: 0.2rem;
     width: 2rem;
+
     background-color: var(--black);
-    display: block
+    display: block;
+
+    transition: all 350ms ease-in-out;
 }
 
+.navigation__menu-toggle :nth-child(1){
+    top: 1rem;
+}
 
-.navigation__menu-toggle :nth-child(1),
- :nth-child(2){
-    margin-bottom: 0.5rem;
+.navigation__menu-toggle :nth-child(2){
+    top: 1.5rem;
+}
+
+.navigation__menu-toggle :nth-child(3){
+    top: 2rem;
 }
 
 .navigation__menu-toggle :nth-child(3){
@@ -49,7 +60,7 @@
 }
 
 .navigation input:checked ~ .navigation__menu-toggle :nth-child(1){
-    transform: rotate(45deg) translateY(-10px);
+    transform: translateY(0.5rem) rotate(-45deg);
 }
 
 .navigation input:checked ~ .navigation__menu-toggle :nth-child(2){
@@ -57,5 +68,9 @@
 }
 
 .navigation input:checked ~ .navigation__menu-toggle :nth-child(3){
-    transform: rotate(45deg) translateY(10px);
+    transform: translateY(-0.5rem) rotate(45deg);
+}
+
+.navigation__menu {
+    margin-top: 100rem;
 }
