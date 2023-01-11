@@ -27,7 +27,7 @@ header {
     
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGER MENU & NAVIGATION */
 
 .burger-menu{
     position: absolute;
@@ -60,7 +60,9 @@ header {
 
     padding: 10% 0;
     
-    transition: all 350ms ease-in-out;
+    transition: all 550ms ease-in-out;
+
+    z-index: 10;
 }
 
 .open{
@@ -111,19 +113,53 @@ header {
     transform: rotate(-45deg);
 }
 
-
-
-
-/* nav input{
-    display: none;
-    visibility: hidden;
-
+.overlay {
     position: absolute;
-    
-} */
-
-
-/* nav input:checked ~ .navigation-menu{
+    top: 0;
     left: 0;
-    right: 50%;
-} */
+    /* bottom: 0;
+    right: 0; */
+
+    background-color: var(--black);
+
+    z-index: 1;
+
+    opacity: 0.9;
+
+    transition: 350ms ease-in-out;
+}
+
+.overlay-active{
+    bottom: 0;
+    right: 0;
+}
+
+/*HERO IMAGE*/
+
+section:has(.hero-image-container){
+    background-color: var(--white);
+}
+
+.hero-image-container{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.hero-image-container h1{
+    position: absolute;
+
+    /* top: 3rem; */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+
+    color: var(--white);
+
+    padding-right: 35rem;
+
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
