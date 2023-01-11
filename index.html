@@ -7,23 +7,45 @@
     <title>CoffeeHouse Cafe</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        
-        <nav class="navigation">
-            <div class="navigation__logo-container">
-                <img class="navigation__logo-container__logo" src="logos/coffee-logo-png-7521.png" alt="">
-            </div>
-            <label>
-                <input type="checkbox">
-                <div class="navigation__menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div class="navigation__logo-container">
+            <img class="navigation__logo-container__logo" src="logos/coffee-logo-png-7521.png" alt="">
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="navigation-menu">
+                <div id="navigation-menu__closing-button">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
                 </div>
-                <div class="navigation__menu">
+                <ul>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>Menu</li>
+                    </a>
+                    <a href="">
+                        <li>Locations</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- <label>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="navigation-menu">
                     <ul>
                         <a href="">
                             <li>Home</li>
@@ -39,8 +61,7 @@
                         </a>
                     </ul>
                 </div>
-            </label>
-
+            </label> -->
         </nav>
     </header>
 
@@ -59,5 +80,6 @@
     <footer>
 
     </footer>
+    <script src="coffee.js"></script>
 </body>
 </html>

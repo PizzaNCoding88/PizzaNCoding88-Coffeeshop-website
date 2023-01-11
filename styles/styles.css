@@ -10,6 +10,7 @@
   
   body {
     min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
   }
   
   html {
@@ -50,7 +51,7 @@
   :root{
     --black: #131417;
     --beige: #d3974d;
-    --white: rgb(223, 221, 221);
+    --white: rgb(238, 232, 232);
   }
 
 
