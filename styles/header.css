@@ -134,9 +134,9 @@ header {
     right: 0;
 }
 
-/*HERO IMAGE*/
+/*HERO IMAGE SECTION*/
 
-section:has(.hero-image-container){
+.hero_image-section {
     background-color: var(--white);
 }
 
@@ -148,18 +148,64 @@ section:has(.hero-image-container){
 }
 
 .hero-image-container h1{
+
     position: absolute;
 
-    /* top: 3rem; */
     top: 50%;
     transform: translateY(-50%);
     left: 2rem;
 
     color: var(--white);
 
-    padding-right: 35rem;
+    padding-right: 60vw;
 
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+    font-size: 3vw;
+    line-height: 4.5vw;
+
+    opacity: 0;
+
+    animation: slideIn 900ms ease-in-out 700ms forwards;
+    
 }
+
+@keyframes slideIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*INTRODUCTION SECTION*/
+
+.introduction{
+    background-color: var(--secondary);
+}
+
+.introduction__image-container {
+
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    overflow-y: hidden;
+    
+}
+
+.introduction__image-container p {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* padding-inline: 10rem; */
+    padding-inline: 25vw;
+
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 4vw;
+
+    animation: slideIn 900ms ease-in-out 700ms forwards;
+
+}
+
+/* FEATURED PRODUCTS SECTION */
 
