@@ -117,7 +117,7 @@ header {
     position: relative;
     text-align: center;
 
-    text-shadow: 0 0 0.3rem var(--black)
+    text-shadow: 0 0 0.2rem var(--black)
 }
 
 #navigation-menu__closing-button {
@@ -265,7 +265,6 @@ header {
 
     display: inline-block;
 
-    
     color: var(--black);
     
 
