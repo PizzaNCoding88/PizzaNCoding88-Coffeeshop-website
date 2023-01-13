@@ -185,8 +185,6 @@ header {
 
 }
 
-
-
 .hero-image-container h1{
 
     position: absolute;
@@ -232,6 +230,10 @@ header {
     margin: 0 auto;
     padding: 2rem 0;
     
+}
+
+.introduction__image-container img{
+    opacity: 0.8;
 }
 
 .introduction__image-container p {
