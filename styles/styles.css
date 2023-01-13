@@ -49,14 +49,17 @@
   }
 
   :root{
-    /* --black: #131417;
-    --beige: #d3974d;
-    --white: rgb(238, 232, 232); */
 
-    --black: #131417;
+    /* --black: #131417;
     --beige: #F5EBE0;
     --secondary: #EDEDE9;
     --accents: #D5BDAF;
+    --white: rgb(238, 232, 232); */
+    
+    --black: #131417;
+    --beige: #f5f5dc;
+    --secondary: #8d6e63;
+    --accents: #8bc34a;
     --white: rgb(238, 232, 232);
   }
 
