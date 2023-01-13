@@ -202,16 +202,22 @@ header {
     font-size: 3vw;
     line-height: 4.5vw;
 
-    opacity: 0;
+    opacity: 1;
 
-    animation: slideIn 900ms ease-in-out 900ms forwards;
+    transition: opacity 1000ms ease-in-out;
+
+    /* animation: slideIn 900ms ease-in-out 900ms forwards; */
     
 }
 
-@keyframes slideIn{
+.fadeIn{
+    opacity: 0;
+}
+
+/* @keyframes slideIn{
     0%{opacity: 0;}
     100%{opacity: 1;}
-}
+} */
 
 /*INTRODUCTION SECTION*/
 
