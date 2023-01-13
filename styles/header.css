@@ -83,31 +83,41 @@ header {
 
 .navigation-menu ul a{
     text-decoration: none;
-    /* position: relative; */
+    
+    color: var(--black);
 }
 
 .navigation-menu ul a li::before{
     content: "";
 
     position: absolute;
-    bottom: -0rem;
+    bottom: -0.5rem;
     left: 50%;
-    transform: translateX(-60%);
+    transform: translateX(-50%);
 
-    width: 100%;
-    height: 0.1rem;
+    width: 0;
+    height: 0.2rem;
 
     background-color: var(--black);
+
+    transition: 400ms ease-in-out;
+}
+
+.navigation-menu ul a li:hover::before{
+    width: 100%;
 }
 
 .navigation-menu ul a:hover{
-    color: yellow;
+    color: var(--black);
 }
 
 .navigation-menu ul a li{
     margin-top: 30%;
     font-size: 2.5rem;
     position: relative;
+    text-align: center;
+
+    text-shadow: 0 0 0.3rem var(--black)
 }
 
 #navigation-menu__closing-button {
@@ -246,13 +256,21 @@ header {
     width: 95%;
     margin: 0 auto;
 
+    text-align: center;
+
     padding: 2rem 0;
 }
 
 .featured-products__container h2{
-    text-align: center;
+
+    display: inline-block;
+
+    
     color: var(--black);
-    text-decoration: underline;
+    
+
+    border-bottom: solid 0.1rem;
+    padding-bottom: 0.5rem;
 
     font-size: 3vw;
 
