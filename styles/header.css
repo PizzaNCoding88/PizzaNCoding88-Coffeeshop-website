@@ -234,6 +234,7 @@ header {
 
 .introduction__image-container img{
     opacity: 0.8;
+    min-height: 100%;
 }
 
 .introduction__image-container p {
@@ -309,10 +310,6 @@ header {
 .pic4 img{
     object-fit: cover;
     height: 90%;
-}
-
-.pic1 img{
-    width: 100%;
 }
 
 /* FOOTER */
