@@ -16,10 +16,3 @@ function overlaySideMenu(){
         overlay.classList.remove("overlay-active");
     }
 }
-
-
-const h1Text = document.querySelector(".hero-image-container h1");
-window.onload = fadeTextIn();
-function fadeTextIn (){
-    h1Text.classList.add("fadeIn");
-}
