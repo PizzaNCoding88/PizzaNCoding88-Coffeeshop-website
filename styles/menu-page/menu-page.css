@@ -1,0 +1,32 @@
+/* HERO SECTION */
+
+.hero-image-container__menu-page h1{
+
+    width: 96%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    color: var(--black);
+
+    text-align: center;
+
+    font-size: 2vw;
+    line-height: 2.6vw;
+
+    opacity: 0;
+
+    animation: fadeIn 1000ms ease-in-out 900ms forwards;
+}
+
+.hero-image-container__menu-page img{
+    filter: blur(0.6px);
+    opacity: 0.5;
+
+    border-radius: 0.5rem;
+}
+
+/* MENU CATEGORIES SECTION */
