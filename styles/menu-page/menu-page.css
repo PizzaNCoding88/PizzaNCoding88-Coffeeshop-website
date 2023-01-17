@@ -55,7 +55,10 @@
     border-radius: 0.5rem;
 }
 
-.menu-categories__container__coffees{
+.menu-categories__container__coffees,
+.menu-categories__container__pastries,
+.menu-categories__container__juices,
+.menu-categories__container__others{
     position: relative;
 }
 
@@ -68,16 +71,54 @@
 
     text-align: center;
 
-    /* background-image: linear-gradient(to right, black, white); */
-
-    background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-    
+    background-image: linear-gradient(to right,rgba(238, 232, 232, 0.363),#131417c2);
 
     color: var(--white);
+    font-weight: bold;
 
+}
+
+/* MENU */
+
+.menu {
+    background-color: var(--accents);
+}
+
+.menu-container{
+    width: 95%;
+    margin: 0 auto;
+
+    padding: 1rem 0;
+}
+
+.menu-coffees h2,
+.menu-pastries h2,
+.menu-juices h2 {
+    text-align: center;
+
+    font-size: 4vw;
+
+    padding: 1rem 0;
+
+    text-decoration: underline;
+}
+
+.menu-coffees table, 
+.menu-pastries table,
+.menu-juices table{
+    width: 100%;
+
+    padding-bottom: 1rem;
+
+    border-bottom: solid 1px;
+}
+
+.product {
+    padding-left: 1rem;
+}
+
+.price{
+    text-align: right;
+
+    padding-right: 1rem;
 }
