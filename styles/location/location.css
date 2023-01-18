@@ -1,0 +1,11 @@
+/* MAP */
+
+.location{
+    background-color: var(--secondary);
+}
+
+.location-container {
+    width: 95%;
+    margin: 0 auto;
+    padding-block: 1rem;
+}
